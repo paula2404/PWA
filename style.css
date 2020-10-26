@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #3b6b14;
+}
+p {
+  text-align: center;
+}
+.gumb {
+  color: #3b6b14;
+  background-color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #3b6b14;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 12px;
+}
+.gumb:hover {
+  background-color: #3b6b14;
+  color: #ffffff;
+}
+.novac{
+  width: 150px;
+}
+.valuta {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.valuta select {
+  padding: 10px 20px 10px 10px;
+  cursor: pointer;
+  appearance: none;
+  border: 1px solid #ffffff;
+  font-size: 16px;
+  background: transparent;
+  background-image: url('img/strelica.svg');
+  background-position: right 0px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+}
+.valuta input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+.broj{
+  color: #3b6b14;
+}
+.zamijeni-tečaj{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tečaj {
+  color: #3b6b14;
+  font-size: 14px;
+  padding: 0 10px;
+}
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+@media (max-width: 600px) {
+  .valuta input {
+    width: 200px;
+  }
+}
