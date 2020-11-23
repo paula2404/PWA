@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="valute.html">Valute</a></li>
+      </ul>
+      <ul>
+        <li><a href="tecajna-lista.html">Početna</a></li>
+      </ul>
+    </nav>
+    <main>
     <img src="img/novac.png" class="novac" />
     <h1>Kalkulator tečajne liste</h1>
     <p>Odaberite valute i iznose da biste dobili tečaj</p>
 
     <div class="container">
       <div class="valuta">
-        <select>
+        <select id="currency-one">
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
           <option value="AUD">AUD</option>
@@ -68,18 +77,18 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number"placeholder="0" value="1" class="broj"/>
+        <input type="number" id="amount-one" placeholder="0" value="1" class="broj"/>
       </div>
 
       <div class="zamijeni-tečaj">
-        <button class="gumb">
+        <button class="gumb" id="swap">
           Zamijeni
         </button>
-        <div class="tečaj"></div>
+        <div class="tečaj" id="rate"></div>
       </div>
 
       <div class="valuta">
-        <select>
+        <select id="currency-two">
           <option value="AED">AED</option>
           <option value="ARS">ARS</option>
           <option value="AUD">AUD</option>
@@ -133,9 +142,10 @@
           <option value="VND">VND</option>
           <option value="ZAR">ZAR</option>
         </select>
-        <input type="number"placeholder="0" class="broj"/>
+        <input type="number" id="amount-two" placeholder="0" class="broj"/>
       </div>
     </div>
-
+    </main>
+    <script src="tecajna-lista.js"></script>
   </body>
 </html>
